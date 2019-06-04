@@ -8,14 +8,14 @@ app = Flask(__name__)
 @app.route("/emailzz")
 def email():
 	to_address = "zacke69420@gmail.com"
-	message = "MALWARE BYTES :)"
-	subject = "MALWARE"
+	message = "MALWARE BYTES FTW :)"
+	subject = "MALWARE BYTES"
 	send_email(
 	to_address,
 	message,
 	subject
 	)
-	return "An email has been sent (I think)"
+	return "An email has been sent (I hope)"
 
 @app.route("/")
 def home():
