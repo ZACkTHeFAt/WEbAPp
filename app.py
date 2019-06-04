@@ -17,6 +17,19 @@ def email():
 	)
 	return "An email has been sent (I hope)"
 
+@app.route("/minecraft")
+def minecraft():
+	to_address = "zacke69420@gmail.com"
+	message = "{} IS THE BEST MINECRAFT CHARCATER EVER!!".format(os.environ.get('best_minecraft_character'))
+	subject = "{}".format(os.environ.get('best_minecraft_character'))
+	send_email(
+	to_address,
+	message,
+	subject
+	)
+	return "CHECK UR EMAIL TO SEE WHO THE BEST MINECRAFT CHARACTER IS (IT'S {})".format(os.environ.get('best_minecraft_character'))
+
+
 @app.route("/")
 def home():
 	return "Success! Welcome to this web app."
