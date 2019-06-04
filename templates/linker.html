@@ -15,7 +15,7 @@
         function travel_to_email_link(){
          var inputValue = document.getElementById("input").value;
          //var base_url = "http://127.0.0.1:33507"; //Local version
-         var base_url = "http://testapp-may-2019.herokuapp.com/"; // Cloud version
+         var base_url = "http://testapp-may-2019.herokuapp.com"; // Cloud version
          window.location.replace(base_url + "/send_to/"+inputValue);
            }
         document.getElementById("dabutton").addEventListener("click", travel_to_email_link);
