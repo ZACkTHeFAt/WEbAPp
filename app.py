@@ -32,6 +32,7 @@ def minecraft():
 
 @app.route("/")
 def home():
+	print("Someone has visited our website! I hope I am looking at the logs right now...")
 	return "Success! Welcome to this web app."
 
 port = int(os.environ.get("PORT", 33507))
